@@ -15,7 +15,7 @@ producer.on('ready', function() {
         "test": i,
         "Cooc": "qwwqw"
       }),
-      partition: i % 16
+      partition: i % 64
     }];
 
     producer.send(payload, function(err, data) {
